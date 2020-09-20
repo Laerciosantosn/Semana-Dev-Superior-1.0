@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 import { RecordsResponse } from './types';
 import { formatDate } from './helpers';
 import Pagination from './Pagination';
+import Filters from '../../components/Filters';
 
 import './styles.css';
 
@@ -26,13 +26,7 @@ const Records: React.FC = () => {
 
   return (
     <div className="page-container">
-      <div className="filters-container records-actions">
-        <Link to="/charts">
-          <button type="button" className="action-filters">
-            VER GRAFICOS
-          </button>
-        </Link>
-      </div>
+      <Filters link="/charts" linkText="VER GRÁFICO" />
       <table className="records-table" cellPadding="0" cellSpacing="0">
         <thead>
           <tr>
