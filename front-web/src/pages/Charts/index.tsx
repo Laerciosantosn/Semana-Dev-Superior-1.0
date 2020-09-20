@@ -69,7 +69,7 @@ const Charts: React.FC = () => {
             <Chart
               options={barOptions}
               type="bar"
-              width="900"
+              width="800"
               height="650"
               series={[{ data: barChartData }]}
             />
@@ -82,7 +82,7 @@ const Charts: React.FC = () => {
               options={{ ...pieOptions, labels: platformData?.labels }}
               type="donut"
               series={platformData?.series}
-              width="350"
+              width="100%"
             />
           </div>
           <div className="gender-chart">
@@ -91,7 +91,7 @@ const Charts: React.FC = () => {
               options={{ ...pieOptions, labels: genderData?.labels }}
               type="donut"
               series={genderData?.series}
-              width="350"
+              width="100%"
             />
           </div>
         </div>
