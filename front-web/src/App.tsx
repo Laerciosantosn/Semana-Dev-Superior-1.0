@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
+import Header from './components/Header';
 
-function App() {
+const App: React.FC = () => {
   return (
-   <h1>Ola Mundo</h1>
+    <Header />
+
   );
-}
+};
 
 export default App;
