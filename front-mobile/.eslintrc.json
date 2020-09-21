@@ -29,10 +29,15 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "arrow-parens": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "react/require-default-props": "off",
     "camelcase": "off",
     "global-require": "off",
     "object-curly-newline": "off",
     "prettier/prettier": "error",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "off",
     "react/style-prop-object": "off",
     "no-use-before-define": "off",
     "react-hooks/rules-of-hooks": "error",
